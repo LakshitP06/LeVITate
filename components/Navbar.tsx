@@ -1,41 +1,39 @@
-import { NAV_LINKS } from "@/constants"
-import Image from "next/image"
-import Link from "next/link"
-import Button from "./Button"
+import { NAV_LINKS } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
+import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween max-container padding-container relative z-30 py-5">
-      <Link href="/">
-        <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
-      </Link>
+    <div className="w-full h-[100px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-black backdrop-blur-md z-50 px-10">
+      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+        <a href="/" className="h-auto w-auto flex flex-row items-center">
+          <Image
+            src="/NavLogo.png"
+            alt="logo"
+            width={70}
+            height={70}
+            className="cursor-pointer hover:animate-slowspin"
+          />
+          <span className="font-bold text-xl md:text-2xl ml-[10px] hidden md:block text-white">
+            LeVITate
+          </span>
+        </a>
 
-      <ul className="hidden h-full gap-12 lg:flex">
-        {NAV_LINKS.map((link) => (
-          <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
-            {link.label}
-          </Link>
-        ))}
-      </ul>
-
-      <div className="lg:flexCenter hidden">
-        <Button 
-          type="button"
-          title="Login"
-          icon="/user.svg"
-          variant="btn_dark_green"
-        />
+        <div className="flex-grow flex justify-center">
+          <div className="w-[700px] h-full flex flex-row items-center justify-between md:mr-20">
+            <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-xl md:text-2xl text-gray-200">
+              {NAV_LINKS.map((link) => (
+                <Link href={link.href} key={link.key} className="regular-16 md:text-lg text-white cursor-pointer hover:font-bold">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  );
+};
 
-      <Image 
-        src="menu.svg"
-        alt="menu"
-        width={32}
-        height={32}
-        className="inline-block cursor-pointer lg:hidden"
-      />
-    </nav>
-  )
-}
-
-export default Navbar
+export default Navbar;
