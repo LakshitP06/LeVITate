@@ -7,7 +7,6 @@ export const NAV_LINKS = [
 ];
 
 // FOOTER
-
 export const SOCIALS = {
   title: 'Social',
   links: [
