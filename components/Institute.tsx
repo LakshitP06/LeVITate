@@ -63,9 +63,6 @@ const Institute = () => {
               <p className="mb-6">
                 Vellore Institute of Technology has an institutional legacy of academic excellence and nurturing talent. Since its inception, it has had the glorious record of this reputed institution making a mark in this country as one of the pioneering academic institutions that has been shaping future leaders and innovators and providing the needed platform for excelling in students' chosen fields of study. This is an institution with famous faculty members, state-of-the-art infrastructure, and research activities that provide a conducive learning environment. Noted for the production of difference-makers in the world, the VIT, Vellore has been synonymous with quality education and world recognition. Its insistence on an innovative culture, with excellence, exposes students to skills and knowledge that will help them succeed in an increasingly competitive world. Therefore, VIT Vellore sustains its revered status in the educational sphere.
               </p>
-              <p>
-                Located in Vellore, a historic city known for its rich heritage, Vellore Institute of Technology (VIT) boasts a legacy of excellence since 1984. A frontrunner in research and academics, VIT consistently ranks among India's top universities. Their focus extends beyond education, nurturing well-rounded individuals through world-class facilities and a vibrant student life. With a strong alumni network, VIT empowers students to translate their ideas into reality, shaping them into future leaders.
-              </p>
             </motion.div>
           </motion.div>
         </div>
